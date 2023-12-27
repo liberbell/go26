@@ -14,4 +14,6 @@ func changeTheCostume(c string) {
 	fmt.Printf("Roger is wearing a costume as %s.\n", c)
 	newCostume := "Rickey Spanish"
 
+	c = newCostume
+	fmt.Printf("Roger is wearing a costume as %s.\n", c)
 }
