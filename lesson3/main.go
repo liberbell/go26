@@ -9,6 +9,8 @@ func main() {
 
 	fmt.Println("Bruce wayne is ", role1)
 	fmt.Println("Bruce wayne is ", role2)
+
+	tellmeWhoYouAre(("Batman"))
 }
 
 func tellmeWhoYouAre(role1 string) string {
