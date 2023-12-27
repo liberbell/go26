@@ -14,7 +14,7 @@ func main() {
 	tellmeWhoYouAre("Batman")
 }
 
-func tellmeWhoYouAre(role3 string) string {
+func tellmeWhoYouAre(role1 string) string {
 	fmt.Println("Bruce wayne is ", role1)
-	return role3
+	return role1
 }
