@@ -11,4 +11,7 @@ func main() {
 	y := 42.0
 	fmt.Println(y)
 	fmt.Printf("y is of type %T\n", y)
+	z := "goose"
+	fmt.Println(z)
+	fmt.Printf("z is of type %T\n", z)
 }
