@@ -5,6 +5,7 @@ import "fmt"
 var role1 = "Billionere"
 
 func main() {
+	role1 := "Playboy"
 	var role2 = "Inventor"
 
 	fmt.Println("Bruce wayne is ", role1)
