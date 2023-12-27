@@ -12,5 +12,6 @@ func main() {
 }
 
 func tellmeWhoYouAre(role1 string) string {
+	fmt.Println("Bruce wayne is ", role1)
 	return role1
 }
