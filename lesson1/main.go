@@ -14,4 +14,12 @@ func main() {
 	z := "goose"
 	fmt.Println(z)
 	fmt.Printf("z is of type %T\n", z)
+
+	done, trueOrNot := outputThat(x, y, z)
+	fmt.Println(done, trueOrNot)
+}
+
+func outputThat(a int, b float64, c string) (string bool) {
+	fmt.Printf("Integer: %d, FloatinPoint: %f, String: %s\n", a, b, c)
+	return "Ok,", true
 }
