@@ -10,3 +10,7 @@ func main() {
 	fmt.Println("Bruce wayne is ", role1)
 	fmt.Println("Bruce wayne is ", role2)
 }
+
+func tellmeWhoYouAre(role1 string) string {
+	return role1
+}
