@@ -10,10 +10,10 @@ func main() {
 	fmt.Println("Bruce wayne is ", role1)
 	fmt.Println("Bruce wayne is ", role2)
 
-	tellmeWhoYouAre(("Batman"))
+	tellmeWhoYouAre("Batman")
 }
 
-func tellmeWhoYouAre(role1 string) string {
+func tellmeWhoYouAre(role3 string) string {
 	fmt.Println("Bruce wayne is ", role1)
-	return role1
+	return role3
 }
