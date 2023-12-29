@@ -28,4 +28,11 @@ func main() {
 		Age:        13,
 		Species:    "Human",
 	}
+
+	hayley := FamilyMember{
+		FamilyName: "Smith",
+		FirstNmae:  "Hayley",
+		Age:        19,
+		Species:    "Human",
+	}
 }
