@@ -28,4 +28,13 @@ func main() {
 		Spices:     "Human",
 	}
 	fmt.Println(francine)
+
+	roger := FamilyMember{
+		FamilyName: "Smith",
+		FirstName:  "Roger",
+		Age:        1200,
+		Spices:     "Alien",
+	}
+
+	fmt.Println(roger)
 }
