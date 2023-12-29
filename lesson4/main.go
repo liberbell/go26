@@ -37,4 +37,5 @@ func main() {
 	}
 
 	fmt.Println(roger)
+	fmt.Println(roger.FirstName)
 }
