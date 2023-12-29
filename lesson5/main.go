@@ -35,4 +35,25 @@ func main() {
 		Age:        19,
 		Species:    "Human",
 	}
+
+	jeff := FamilyMember{
+		FamilyName: "Fisher",
+		FirstNmae:  "Jeff",
+		Age:        31,
+		Species:    "Human",
+	}
+
+	Klous := FamilyMember{
+		FamilyName: "Heibler",
+		FirstNmae:  "Klous",
+		Age:        23,
+		Species:    "Fish",
+	}
+
+	roger := FamilyMember{
+		FamilyName: "Smith",
+		FirstNmae:  "Roger",
+		Age:        1277,
+		Species:    "Alien",
+	}
 }
