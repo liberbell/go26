@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type FamilyMember struct {
 	FamilyName string
 	FirstNmae  string
@@ -56,4 +58,12 @@ func main() {
 		Age:        1277,
 		Species:    "Alien",
 	}
+
+	fmt.Println(francine)
+	fmt.Println(stan)
+	fmt.Println(hayley)
+	fmt.Println(jeff)
+	fmt.Println(steve)
+	fmt.Println(Klous)
+	fmt.Println(roger)
 }
