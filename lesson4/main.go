@@ -23,9 +23,9 @@ func main() {
 	fmt.Println("Hello, world")
 
 	francine := FamilyMember{
-		"familyName": "Smith",
-		"firstName":  "Francine",
-		"Spices":     "Human",
+		familyName: "Smith",
+		firstName:  "Francine",
+		spices:     "Human",
 	}
 	fmt.Println(francine)
 }
