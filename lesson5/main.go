@@ -9,6 +9,11 @@ type FamilyMember struct {
 	Species    string
 }
 
+func (r FamilyMember) sayYourName() string {
+	fullName := r.FirstNmae + " " + r.FamilyName
+	return fullName
+}
+
 func main() {
 	francine := FamilyMember{
 		FamilyName: "Smith",
