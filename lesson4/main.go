@@ -6,11 +6,11 @@ import (
 )
 
 type FamilyMember struct {
-	familyName string
-	firstName  string
-	age        int
-	birthdate  time.Time
-	spices     string
+	FamilyName string
+	FirstName  string
+	Age        int
+	Birthdate  time.Time
+	Spices     string
 }
 
 // var FamilyName string
@@ -23,9 +23,9 @@ func main() {
 	fmt.Println("Hello, world")
 
 	francine := FamilyMember{
-		familyName: "Smith",
-		firstName:  "Francine",
-		spices:     "Human",
+		FamilyName: "Smith",
+		FirstName:  "Francine",
+		Spices:     "Human",
 	}
 	fmt.Println(francine)
 }
