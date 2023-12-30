@@ -6,6 +6,10 @@ func main() {
 	users := make(map[string]string)
 	fmt.Println(users)
 	fmt.Println(len((users)))
+	fmt.Println(users == nil)
+
+	var dummyMap map[string]string
+	fmt.Println(dummyMap == nil)
 
 	users["prefer@example.com"] = "prefer example"
 	users["lois@example.com"] = "lois example"
