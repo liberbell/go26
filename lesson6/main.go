@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	users := make(map[string]string)
 	fmt.Println(users)
+	fmt.Println(len((users)))
 
 	users["prefer@example.com"] = "prefer example"
 	users["lois@example.com"] = "lois example"
@@ -18,7 +19,9 @@ func main() {
 
 	users["stewie@example.com"] = "stewerd example"
 	fmt.Println(users)
+	fmt.Println(len(users))
 
 	delete(users, "stewie@example.com")
 	fmt.Println(users)
+	fmt.Println(len(users))
 }
