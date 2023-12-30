@@ -18,4 +18,7 @@ func main() {
 	fmt.Printf("%T\n", somemap2)
 	fmt.Println(somemap2, len(somemap2), cap(somemap2))
 
+	somemap2 = []string{"something#1"}
+	fmt.Println(somemap2, len(somemap2), cap(somemap2))
+
 }
