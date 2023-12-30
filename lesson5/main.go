@@ -72,5 +72,5 @@ func main() {
 	fmt.Println(Klous)
 	fmt.Println(roger)
 
-	fmt.Println("Hello my name is ", roger.sayYourName())
+	fmt.Println("Hello my name is ", roger.sayYourName(), " show me your ID card and I tell you who you are.", Klous.sayYourName())
 }
