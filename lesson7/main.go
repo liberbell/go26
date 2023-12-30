@@ -15,5 +15,7 @@ func main() {
 	// somemap[3] = "something#4"
 
 	var somemap2 []string
+	fmt.Printf("%T\n", somemap2)
+	fmt.Println(somemap2, len(somemap2), cap(somemap2))
 
 }
