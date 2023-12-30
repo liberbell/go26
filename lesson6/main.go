@@ -18,4 +18,7 @@ func main() {
 
 	users["stewie@example.com"] = "stewerd example"
 	fmt.Println(users)
+
+	delete(users, "stewie@example.com")
+	fmt.Println(users)
 }
