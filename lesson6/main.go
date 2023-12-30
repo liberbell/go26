@@ -15,4 +15,7 @@ func main() {
 
 	fmt.Println(users["meg@example.com"])
 	fmt.Println(users)
+
+	users["stewie@example.com"] = "stewerd example"
+	fmt.Println(users)
 }
