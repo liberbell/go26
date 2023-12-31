@@ -36,5 +36,7 @@ func main() {
 	someFloat[0] = 42.42
 	fmt.Println(someFloat, len(someFloat), cap(someFloat))
 	someFloat = append(someFloat, 41.41, 445.998)
+	fmt.Println(someFloat, len(someFloat), cap(someFloat))
+	someFloat = append(someFloat, 666.666, 777.777)
 
 }
