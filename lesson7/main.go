@@ -24,6 +24,8 @@ func main() {
 	someInteger := []int{42, 23, 1000, -1}
 	fmt.Printf("%T\n", someInteger)
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
+	someInteger = append(someInteger, 987, 654, 765, 432, 321, 543)
+	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 
 	someFloat := make([]float64, 3, 6)
 	fmt.Printf("%T\n", someFloat)
