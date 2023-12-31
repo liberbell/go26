@@ -26,6 +26,8 @@ func main() {
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 	someInteger = append(someInteger, 987, 654, 765, 432, 321, 543)
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
+	someInteger = append(someInteger, 999)
+	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 
 	someFloat := make([]float64, 3, 6)
 	fmt.Printf("%T\n", someFloat)
