@@ -40,4 +40,6 @@ func main() {
 	someFloat = append(someFloat, 666.666, 777.777)
 	fmt.Println(someFloat, len(someFloat), cap(someFloat))
 
+	someFloat = append(someFloat[0:4], someFloat[5:7])
+
 }
