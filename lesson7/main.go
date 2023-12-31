@@ -25,4 +25,11 @@ func main() {
 	fmt.Printf("%T\n", someInteger)
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 
+	someFloat := make([]float64, 3, 6)
+	fmt.Printf("%T\n", someFloat)
+	fmt.Println(someFloat, len(someFloat), cap(someFloat))
+
+	someFloat[0] = 42.42
+	fmt.Println(someFloat, len(someFloat), cap(someFloat))
+
 }
