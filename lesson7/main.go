@@ -23,5 +23,6 @@ func main() {
 
 	someInteger := []int{42, 23, 1000, -1}
 	fmt.Printf("%T\n", someInteger)
+	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 
 }
