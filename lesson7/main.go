@@ -21,4 +21,7 @@ func main() {
 	somemap2 = []string{"something#1"}
 	fmt.Println(somemap2, len(somemap2), cap(somemap2))
 
+	someInteger := []int{42, 23, 1000, -1}
+	fmt.Printf("%T\n", someInteger)
+
 }
