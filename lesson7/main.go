@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	var somemap [3]string
@@ -27,6 +30,8 @@ func main() {
 	someInteger = append(someInteger, 987, 654, 765, 432, 321, 543)
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 	someInteger = append(someInteger, 999)
+	fmt.Println(someInteger, len(someInteger), cap(someInteger))
+	sort.Ints(someInteger)
 	fmt.Println(someInteger, len(someInteger), cap(someInteger))
 
 	someFloat := make([]float64, 3, 6)
