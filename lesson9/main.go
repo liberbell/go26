@@ -7,5 +7,5 @@ func main()  {
 
 	fmt.Println(i)
 
-	aSlice := []string{}
+	aSlice := []string{"Fry", "Leela", "Bender", "Amy", "Hubert", "Zoidberg", "Hermes", "Scruffy", "Nibbler"}
 }
