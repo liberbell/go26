@@ -55,4 +55,6 @@ func main() {
 			fmt.Printf("Don`t knowtype %T\n", t)
 		}
 	}
+	whatAmI(true)
+	whatAmI(1)
 }
