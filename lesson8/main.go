@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"time"
 )
 
 func main() {
@@ -26,5 +27,10 @@ func main() {
 		fmt.Println("Two")
 	case 3:
 		fmt.Println("Three")
+	}
+
+	switch time.Now() {
+	case time.Monday, time.Tuesday:
+		fmt.Println("It`s the weekend")
 	}
 }
