@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	number := 23
+	number := 9
 	log.Println("Let`s talk about", number)
 
 	if number < 0 {
