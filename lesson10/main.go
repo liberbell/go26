@@ -1,13 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-type wookiee struct {
+type Wookiee struct {
 	Name     string
 	Spieces  string
 	Fraction string
 }
 
 func main() {
+	chewbacca := Wookiee{
+		Name:     "Chewbacca",
+		Spieces:  "Wookiee",
+		Fraction: "Rebellion",
+	}
+	fmt.Println(chewbacca.Name, "is a tall", strings.ToLower(chewbacca.Spieces))
 	fmt.Println("Hello world")
 }
