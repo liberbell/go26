@@ -24,4 +24,8 @@ func main() {
 
 	aMap := map[string]string{"dog": "Scoby Doo", "cat": "Garfield", "mouse": "Jerry", "platybus": "Perry"}
 	fmt.Println(aMap)
+
+	for k, val := range aMap {
+		fmt.Printf("%s: %s\n", k, val)
+	}
 }
