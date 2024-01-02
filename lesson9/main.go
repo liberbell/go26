@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d", i)
+		fmt.Printf("%d ", i)
 	}
+	fmt.Println()
 
 	aSlice := []string{"Fry", "Leela", "Bender", "Amy", "Hubert", "Zoidberg", "Hermes", "Scruffy", "Nibbler"}
 	fmt.Println(aSlice)
