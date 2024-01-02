@@ -18,6 +18,10 @@ func main() {
 	aString := "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed"
 	fmt.Println(aString)
 
+	for _, val := range aString {
+		fmt.Printf("%q ", val)
+	}
+
 	aMap := map[string]string{"dog": "Scoby Doo", "cat": "Garfield", "mouse": "Jerry", "platybus": "Perry"}
 	fmt.Println(aMap)
 }
