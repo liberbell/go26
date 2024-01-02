@@ -14,4 +14,5 @@ func main() {
 	fmt.Println(aString)
 
 	aMap := map[string]string{"dog": "Scoby Doo", "cat": "Garfield", "mouse": "Jerry", "platybus": "Perry"}
+	fmt.Println(aMap)
 }
