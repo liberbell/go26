@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(aSlice)
 
 	for i, val := range aSlice {
-		fmt.Printf("%d %v ", i, val)
+		fmt.Printf("%d %s\n", i, val)
 	}
 
 	aString := "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed"
