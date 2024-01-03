@@ -11,6 +11,11 @@ type Wookiee struct {
 	Fraction string
 }
 
+type Boy struct {
+	Name string
+	Age  int
+}
+
 func main() {
 	chewbacca := Wookiee{
 		Name:     "Chewbacca",
