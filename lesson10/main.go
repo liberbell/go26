@@ -5,6 +5,11 @@ import (
 	"strings"
 )
 
+type Sidekicks interface {
+	saysASaying() string
+	isHuman() bool
+}
+
 type Wookiee struct {
 	Name     string
 	Spieces  string
