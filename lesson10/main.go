@@ -34,7 +34,7 @@ func (r Boy) saysASaying() string {
 }
 
 func (r Boy) isHuman() bool {
-	return false
+	return true
 }
 
 func main() {
