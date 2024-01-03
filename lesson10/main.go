@@ -20,6 +20,10 @@ func (r Wookiee) saysASaying() string {
 	return "\"RAWRGWAGGR!\""
 }
 
+func (r Wookiee) isHuman() bool {
+	return false
+}
+
 type Boy struct {
 	Name string
 	Age  int
