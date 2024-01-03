@@ -22,6 +22,12 @@ func main() {
 		Spieces:  "Wookiee",
 		Fraction: "Rebellion",
 	}
+
+	morty := Boy{
+		Name: "Morty",
+		Age:  14,
+	}
+
 	fmt.Println(chewbacca.Name, "is a tall", strings.ToLower(chewbacca.Spieces))
 	fmt.Println("Hello world")
 }
