@@ -16,11 +16,11 @@ type Wookiee struct {
 	Fraction string
 }
 
-func (r Wookiee) saysASaying() string {
+func (r *Wookiee) saysASaying() string {
 	return "\"RAWRGWAGGR!\""
 }
 
-func (r Wookiee) isHuman() bool {
+func (r *Wookiee) isHuman() bool {
 	return false
 }
 
@@ -29,11 +29,11 @@ type Boy struct {
 	Age  int
 }
 
-func (r Boy) saysASaying() string {
+func (r *Boy) saysASaying() string {
 	return "\"Why I don`t have a chachphrase?\""
 }
 
-func (r Boy) isHuman() bool {
+func (r *Boy) isHuman() bool {
 	return true
 }
 
@@ -50,9 +50,9 @@ func main() {
 	}
 
 	fmt.Println(chewbacca.Name, "is a tall", strings.ToLower(chewbacca.Spieces))
-	outputInfo(chewbacca)
+	outputInfo(&chewbacca)
 	fmt.Println(morty.Name, "is a Rick`s poor sidekick")
-	outputInfo(morty)
+	outputInfo(&morty)
 	// fmt.Println("Hello world")
 }
 
