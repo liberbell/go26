@@ -34,6 +34,7 @@ func main() {
 	}
 
 	fmt.Println(chewbacca.Name, "is a tall", strings.ToLower(chewbacca.Spieces))
+	outputInfo(chewbacca)
 	fmt.Println(morty.Name, "is a Rick`s poor sidekick")
 	fmt.Println("Hello world")
 }
