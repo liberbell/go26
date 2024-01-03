@@ -37,3 +37,7 @@ func main() {
 	fmt.Println(morty.Name, "is a Rick`s poor sidekick")
 	fmt.Println("Hello world")
 }
+
+func outputInfo(s Sidekicks) {
+	fmt.Println("This sidekick says: ", s.saysASaying())
+}
