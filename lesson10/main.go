@@ -16,6 +16,10 @@ type Wookiee struct {
 	Fraction string
 }
 
+func (r Wookiee) saysASaying() string {
+	return "\"RAWRGWAGGR!\""
+}
+
 type Boy struct {
 	Name string
 	Age  int
