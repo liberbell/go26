@@ -40,4 +40,10 @@ func main() {
 
 func outputInfo(s Sidekicks) {
 	fmt.Println("This sidekick says: ", s.saysASaying())
+	if s.isHuman() == true {
+		fmt.Println("and is human")
+	} else {
+		fmt.Println("and is not human")
+	}
+	fmt.Println()
 }
