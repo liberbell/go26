@@ -29,6 +29,14 @@ type Boy struct {
 	Age  int
 }
 
+func (r Boy) saysASaying() string {
+	return "\"Why I don`t have a chachphrase?\""
+}
+
+func (r Boy) isHuman() bool {
+	return false
+}
+
 func main() {
 	chewbacca := Wookiee{
 		Name:     "Chewbacca",
