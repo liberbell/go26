@@ -1,6 +1,9 @@
 package main
 
-import "os"
+import (
+	"encoding/json"
+	"os"
+)
 
 type Person struct {
 	Name   string `json:"name"`
@@ -14,4 +17,10 @@ func main() {
 		panic(err)
 	}
 	defer file.Close()
+
+	decoder := json.NewDecoder(file)
+	var people []Person
+	if err := decoder.Decode(&people); err != nil {
+		panic(err)
+	}
 }
