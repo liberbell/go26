@@ -8,5 +8,6 @@ import (
 
 func main() {
 	var myVar helpers.SomeType
-	fmt.Println("Hello")
+	myVar = "Stan Smith"
+	fmt.Println(myVar)
 }
