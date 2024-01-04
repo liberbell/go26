@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 )
 
@@ -28,4 +29,5 @@ func main() {
 	if err := encoder.Encode(people); err != nil {
 		panic(err)
 	}
+	fmt.Println("Data exported to export.json")
 }
