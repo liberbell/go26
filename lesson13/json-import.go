@@ -10,4 +10,8 @@ type Person struct {
 
 func main() {
 	file, err := os.Open("data.json")
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
 }
