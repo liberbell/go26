@@ -1,6 +1,9 @@
 package main
 
-import "os"
+import (
+	"encoding/json"
+	"os"
+)
 
 type Person struct {
 	Name   string `json:"name"`
@@ -16,6 +19,13 @@ func main() {
 
 	file, err := os.Create("export.json")
 	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", " ")
+	if err := encoder.Encode(people); err != nil {
 		panic(err)
 	}
 }
