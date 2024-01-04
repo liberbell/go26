@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 )
 
@@ -23,4 +24,5 @@ func main() {
 	if err := decoder.Decode(&people); err != nil {
 		panic(err)
 	}
+	fmt.Println(people)
 }
