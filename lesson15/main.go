@@ -10,13 +10,16 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		n, err := fmt.Fprintf(w, "Hello, world")
-		if err != nil {
-			fmt.Println(err)
-		}
-		fmt.Println(fmt.Sprintf("Bytes written: %d", n))
-	})
+
+	http.HandleFunc("/", Home)
+
+	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	// 	n, err := fmt.Fprintf(w, "Hello, world")
+	// 	if err != nil {
+	// 		fmt.Println(err)
+	// 	}
+	// 	fmt.Println(fmt.Sprintf("Bytes written: %d", n))
+	// })
 
 	http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {})
 
