@@ -10,7 +10,8 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "This is the about page.")
+	owner, saying := getData()
+	fmt.Fprintf(w, "This is the about page of %s \n I like to say %s \n and note is 2 + 2 = %d", owner, saying, sum)
 }
 
 func getData() (string, string) {
