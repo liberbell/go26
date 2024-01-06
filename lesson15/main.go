@@ -13,6 +13,12 @@ func About(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "This is the about page.")
 }
 
+func getData() (string, string) {
+	o := "Eddie Murfee"
+	s := "New York"
+	return o, s
+}
+
 func main() {
 
 	http.HandleFunc("/", Home)
