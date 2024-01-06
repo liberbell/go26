@@ -21,6 +21,10 @@ func getData() (string, string) {
 	return o, s
 }
 
+func addValues(x, y int) int {
+	return x + y
+}
+
 func main() {
 
 	http.HandleFunc("/", Home)
