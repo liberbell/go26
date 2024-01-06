@@ -11,4 +11,11 @@ func TestAdd(t *testing.T) {
 		{-1, 1, 0},
 		{-1, -1, -2},
 	}
+
+	for _, c := range cases {
+		got := Add(c.a, c.b)
+		if got != c.want {
+			t.Errorf("Add(%d, %d) = %d, want %d", c.a, c.b, got, c.want)
+		}
+	}
 }
