@@ -13,4 +13,5 @@ func main() {
 		}
 		fmt.Println(fmt.Sprintf("Bytes written: %d", n))
 	})
+	http.ListenAndServe("localhost:8000", nil)
 }
