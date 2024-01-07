@@ -36,7 +36,9 @@ func Divide(w http.ResponseWriter, r *http.Request) {
 	f, err := divideValue(x, y)
 	if err != nil {
 		_, _ = fmt.Fprintf(w, "Error: division by zero is not a valid operation. Error returned: %s", err)
+		return
 	}
+	_, _ = fmt.Fprintf(w, fmt.Sprintf("%f divided by %f is %f", x, y, f))
 }
 
 func divideValue(x, y float64) (float64, error) {
