@@ -22,7 +22,9 @@ func getData() (string, string) {
 }
 
 func addValues(x, y int) int {
-	return x + y
+	var sum int
+	sum = x + y
+	return sum
 }
 
 func main() {
