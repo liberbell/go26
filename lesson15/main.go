@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"net/http"
 )
@@ -37,8 +38,12 @@ func Divide(w http.ResponseWriter, r *http.Request) {
 
 func divideValue(x, y float64) (float64, error) {
 	var divide float64
+	if y == 0 {
+		err := errors.New("divided by zero")
+		return 0, err
+	}
 	divide = x / y
-	return divide, nil
+	return divide, err
 }
 
 func main() {
