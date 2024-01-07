@@ -32,13 +32,13 @@ func addValues(x, y int) int {
 func Divide(w http.ResponseWriter, r *http.Request) {
 	x := 100.0
 	y := 10.0
-	divideValue(x, y)
+	f, err := divideValue(x, y)
 }
 
-func divideValue(x, y float64) float64 {
+func divideValue(x, y float64) (float64, error) {
 	var divide float64
 	divide = x / y
-	return divide
+	return divide, nil
 }
 
 func main() {
