@@ -32,7 +32,7 @@ func addValues(x, y int) int {
 
 func Divide(w http.ResponseWriter, r *http.Request) {
 	x := 100.0
-	y := 10.0
+	y := 0.0
 	f, err := divideValue(x, y)
 	if err != nil {
 		_, _ = fmt.Fprintf(w, "Error: division by zero is not a valid operation. Error returned: %s", err)
