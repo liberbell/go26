@@ -13,3 +13,9 @@ func renderTemplate(w http.ResponseWriter, tpml string) {
 		fmt.Println("Error parsing template: ", err)
 	}
 }
+
+var tc = make(map[string])
+
+func renderTemplateTemp(w http.ResponseWriter, t string)  {
+	
+}
