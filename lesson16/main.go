@@ -12,4 +12,5 @@ func main() {
 	http.HandleFunc("/about", About)
 
 	fmt.Println(fmt.Sprintf("Starting server on port: %d", portNumber))
+	_ = http.ListenAndServe(portNumber, nil)
 }
