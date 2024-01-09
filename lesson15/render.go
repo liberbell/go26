@@ -14,8 +14,12 @@ func renderTemplate(w http.ResponseWriter, tpml string) {
 	}
 }
 
-var tc = make(map[string])
+var tc = make(map[string]*template.Template)
 
-func renderTemplateTemp(w http.ResponseWriter, t string)  {
-	
+func RenderTemplateTemp(w http.ResponseWriter, t string) {
+	var tmpl *template.Template
+	var err error
+
+	_, inMap := tc[t]
+	if !inMap
 }
