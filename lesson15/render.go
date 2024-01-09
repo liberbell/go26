@@ -21,5 +21,9 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 	var err error
 
 	_, inMap := tc[t]
-	if !inMap
+	if !inMap {
+		// some cache
+	} else {
+		// no make
+	}
 }
