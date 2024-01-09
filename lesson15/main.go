@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	_ "/pkg/handlers"
 )
 
 const portNumber = ":8000"
