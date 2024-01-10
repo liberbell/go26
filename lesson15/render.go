@@ -26,4 +26,7 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 	} else {
 		// no make
 	}
+
+	tmpl = tc[t]
+	err = tmpl.Execute(w, nil)
 }
