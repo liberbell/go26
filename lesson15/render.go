@@ -41,7 +41,10 @@ func createTemplateCache(t string) error {
 		"./templates/base_layout.tpml",
 	}
 
-	template.ParseFiles(templates...)
+	tmpl, err := template.ParseFiles(templates...)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
