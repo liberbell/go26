@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func RenderTemplate(w http.ResponseWriter, tpml string) {
+func RenderTemplateTemp(w http.ResponseWriter, tpml string) {
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base.tpml")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
@@ -17,7 +17,7 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 
 var tc = make(map[string]*template.Template)
 
-func RenderTemplateTemp(w http.ResponseWriter, t string) {
+func RenderTemplate(w http.ResponseWriter, t string) {
 	var tmpl *template.Template
 	var err error
 
