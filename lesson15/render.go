@@ -25,7 +25,7 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 	if !inMap {
 		// some cache
 	} else {
-		// no make
+		log.Println("using cached template")
 	}
 
 	tmpl = tc[t]
@@ -33,4 +33,9 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 	if err != nil {
 		log.Println(err)
 	}
+}
+
+func createTemplateCache(t string) error {
+
+	return nil
 }
