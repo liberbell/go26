@@ -36,6 +36,12 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 }
 
 func createTemplateCache(t string) error {
+	templates := []string{
+		fmt.Sprintf("./templates/%s", t),
+		"./templates/base_layout.tpml",
+	}
+
+	template.ParseFiles(templates...)
 
 	return nil
 }
