@@ -44,7 +44,7 @@ func RenderTemplate(w http.ResponseWriter, t string) {
 func createTemplateCache(t string) error {
 	templates := []string{
 		fmt.Sprintf("./templates/%s", t),
-		"./templates/base_layout.tpml",
+		"./templates/base.tpml",
 	}
 
 	tmpl, err := template.ParseFiles(templates...)
