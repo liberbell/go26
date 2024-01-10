@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 )
 
@@ -29,4 +30,7 @@ func RenderTemplateTemp(w http.ResponseWriter, t string) {
 
 	tmpl = tc[t]
 	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Println(err)
+	}
 }
