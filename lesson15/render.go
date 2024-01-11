@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"path/filepath"
 )
 
 func RenderTemplate(w http.ResponseWriter, tpml string) {
@@ -59,4 +60,6 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 
 func createTemplateCache() (map[string]*template.Template, err) {
 	theCache := map[string]*template.Template()
+
+	pages, err := filepath.Glob("./templates/*_page.tpml")
 }
