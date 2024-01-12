@@ -71,5 +71,7 @@ func createTemplateCache() (map[string]*template.Template, err) {
 		if err != nil {
 			return theCache, err
 		}
+
+		filepath.Glob("./templates/*_layout.tpml")
 	}
 }
