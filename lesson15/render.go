@@ -83,6 +83,8 @@ func createTemplateCache() (map[string]*template.Template, err) {
 				return theCache, err
 			}
 		}
+
 		theCache[name] = ts
 	}
+	return theCache, nil
 }
