@@ -72,6 +72,13 @@ func createTemplateCache() (map[string]*template.Template, err) {
 			return theCache, err
 		}
 
-		filepath.Glob("./templates/*_layout.tpml")
+		matches, err := filepath.Glob("./templates/*_layout.tpml")
+		if err != nil {
+			return theCache, err
+		}
+
+		if len(matches) > 0 {
+			ts, err = ts.ParseGlob("./templates/*_layout.tpml")
+		}
 	}
 }
