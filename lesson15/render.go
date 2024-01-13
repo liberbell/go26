@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 	"path/filepath"
 )
@@ -13,7 +13,7 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base_layout.tpml")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
-		fmt.Println("Error parsing template: ", err)
+		log.Fatalln("Error parsing template: ", err)
 	}
 }
 
