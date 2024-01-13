@@ -3,14 +3,12 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	"./pkg/config/config.go"
 )
 
 const portNumber = ":8000"
 
 func main() {
-	var app config.AppConfig
+	var app AppConfig
 
 	tc, err := CreateTemplateCache()
 
