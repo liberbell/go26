@@ -1,9 +1,10 @@
 package main
 
 import (
-	"command-line-arguments/Users/hideakiehara/virtualenv/go26/lesson15/pkg/config/config.go"
 	"fmt"
 	"net/http"
+
+	"./pkg/config/config.go"
 )
 
 const portNumber = ":8000"
