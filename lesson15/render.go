@@ -20,8 +20,11 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 		log.Fatalln("Error creating template cache for some reason: ", err)
 	}
 
-	buf := new / bytes.Buffer
-	.Execute(buf, nil)
+	buf := new(bytes.Buffer)
+	err = t.Execute(buf, nil)
+	if err != nil {
+		log.Println("template not in cache for some reason: ", err)
+	}
 
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base_layout.tpml")
 	err := parsedTemplate.Execute(w, nil)
