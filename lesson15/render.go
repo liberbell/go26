@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -9,11 +10,14 @@ import (
 
 func RenderTemplate(w http.ResponseWriter, tpml string) {
 	tc, err := createTemplateCache()
+	if err != nil {
+		log.Fatalln("Error creating template cache: ", err)
+	}
 
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base_layout.tpml")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
-		log.Fatalln("Error parsing template: ", err)
+		fmt.Println("Error parsing template: ", err)
 	}
 }
 
