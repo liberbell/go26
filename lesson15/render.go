@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"html/template"
 	"log"
@@ -19,7 +20,8 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 		log.Fatalln("Error creating template cache for some reason: ", err)
 	}
 
-	buf := t.Execute(buf, nil)
+	buf := new / bytes.Buffer
+	.Execute(buf, nil)
 
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base_layout.tpml")
 	err := parsedTemplate.Execute(w, nil)
