@@ -14,6 +14,11 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 		log.Fatalln("Error creating template cache: ", err)
 	}
 
+	t, ok := tc[tpml]
+	if !ok {
+		log.Fatalln("Error creating template cache: ", err)
+	}
+
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tpml, "./templates/base_layout.tpml")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
