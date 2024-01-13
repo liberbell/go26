@@ -78,7 +78,7 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 // 	return nil
 // }
 
-func createTemplateCache() (map[string]*template.Template, error) {
+func CreateTemplateCache() (map[string]*template.Template, error) {
 	theCache := map[string]*template.Template{}
 
 	pages, err := filepath.Glob("./templates/*_page.tpml")

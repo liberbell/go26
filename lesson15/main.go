@@ -12,6 +12,8 @@ const portNumber = ":8000"
 func main() {
 	var app config.AppConfig
 
+	tc, err := CreateTemplateCache()
+
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
 
