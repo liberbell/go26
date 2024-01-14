@@ -16,6 +16,7 @@ func main() {
 		log.Fatalln("Error creating template cache: ", err)
 	}
 	app.TemplateCache = tc
+	NewTemplates(&app)
 
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
