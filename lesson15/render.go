@@ -9,10 +9,10 @@ import (
 )
 
 func RenderTemplate(w http.ResponseWriter, tpml string) {
-	tc, err := CreateTemplateCache()
-	if err != nil {
-		log.Fatalln("Error creating template cache: ", err)
-	}
+	// tc, err := CreateTemplateCache()
+	// if err != nil {
+	// 	log.Fatalln("Error creating template cache: ", err)
+	// }
 
 	t, ok := tc[tpml]
 	if !ok {
