@@ -10,6 +10,10 @@ import (
 
 var app *AppConfig
 
+func NewTemplates(a *AppConfig) {
+	app = &AppConfig
+}
+
 func RenderTemplate(w http.ResponseWriter, tpml string) {
 	// tc, err := CreateTemplateCache()
 	// if err != nil {
