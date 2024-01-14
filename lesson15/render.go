@@ -8,6 +8,8 @@ import (
 	"path/filepath"
 )
 
+var app *AppConfig
+
 func RenderTemplate(w http.ResponseWriter, tpml string) {
 	// tc, err := CreateTemplateCache()
 	// if err != nil {
