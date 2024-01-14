@@ -23,11 +23,11 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 
 	t, ok := tc[tpml]
 	if !ok {
-		log.Fatalln("Error creating template cache for some reason: ", err)
+		log.Fatalln("Error creating template cache for some reason: ", ok)
 	}
 
 	buf := new(bytes.Buffer)
-	err = t.Execute(buf, nil)
+	err := t.Execute(buf, nil)
 	if err != nil {
 		log.Println(err)
 	}
