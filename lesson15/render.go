@@ -9,7 +9,7 @@ import (
 )
 
 func RenderTemplate(w http.ResponseWriter, tpml string) {
-	tc, err := createTemplateCache()
+	tc, err := CreateTemplateCache()
 	if err != nil {
 		log.Fatalln("Error creating template cache: ", err)
 	}
