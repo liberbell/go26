@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 )
 
@@ -11,6 +12,9 @@ func main() {
 	var app AppConfig
 
 	tc, err := CreateTemplateCache()
+	if err != nil {
+		log.Fatalln("Error creating template cache: ", err)
+	}
 
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
