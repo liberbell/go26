@@ -11,7 +11,7 @@ import (
 var app *AppConfig
 
 func NewTemplates(a *AppConfig) {
-	app = &AppConfig
+	app = a
 }
 
 func RenderTemplate(w http.ResponseWriter, tpml string) {
@@ -19,6 +19,7 @@ func RenderTemplate(w http.ResponseWriter, tpml string) {
 	// if err != nil {
 	// 	log.Fatalln("Error creating template cache: ", err)
 	// }
+	tc := app.TemplateCache
 
 	t, ok := tc[tpml]
 	if !ok {
