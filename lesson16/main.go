@@ -14,10 +14,10 @@ func main() {
 	i = 8
 	fmt.Println("i is set to: ", i)
 
-	whatWasSaid := saySomething()
-	fmt.Println("The function returned: ", whatWasSaid)
+	whatWasSaid, theOtherThing := saySomething()
+	fmt.Println("The function returned: ", whatWasSaid, theOtherThing)
 }
 
-func saySomething() string {
-	return "something"
+func saySomething() (string, string) {
+	return "something", "returned"
 }
