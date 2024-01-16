@@ -14,5 +14,6 @@ func main() {
 }
 
 func saySomething(s string) (string, string) {
+	log.Println("s from the saySomething function: ", s)
 	return s, "world"
 }
