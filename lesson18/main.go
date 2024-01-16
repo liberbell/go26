@@ -7,15 +7,18 @@ import (
 
 var s = "seven"
 
+type User struct {
+	FirstName   string
+	LastName    string
+	PhoneNumber string
+	Age         int
+	BirthDate   time.Time
+}
+
 func main() {
 	var s2 = "six"
 
 	s := "eight"
-	var firstName string
-	var lastName string
-	var phoneNumber string
-	var age int
-	var birthDate time.Time
 
 	log.Println("s is: ", s)
 	log.Println("s2 is: ", s2)
