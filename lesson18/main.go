@@ -16,17 +16,10 @@ type User struct {
 }
 
 func main() {
-	var s2 = "six"
+	user := User{
+		FirstName: "Trevor",
+		LastName:  "Sweler",
+	}
 
-	s := "eight"
-
-	log.Println("s is: ", s)
-	log.Println("s2 is: ", s2)
-
-	saySomething("xxx")
-}
-
-func saySomething(s3 string) (string, string) {
-	log.Println("s from the saySomething function: ", s)
-	return s3, "world"
+	log.Println(user.FirstName)
 }
