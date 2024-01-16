@@ -6,6 +6,10 @@ type myStruct struct {
 	FirstName string
 }
 
+func (m *myStruct) printFirstName() string {
+
+}
+
 func main() {
 	var myVar myStruct
 
