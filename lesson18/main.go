@@ -1,11 +1,21 @@
 package main
 
-import "log"
+import (
+	"log"
+	"time"
+)
 
 var s = "seven"
 
 func main() {
 	var s2 = "six"
+
+	s := "eight"
+	var firstName string
+	var lastName string
+	var phoneNumber string
+	var age int
+	var birthDate time.Time
 
 	log.Println("s is: ", s)
 	log.Println("s2 is: ", s2)
