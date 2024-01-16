@@ -17,9 +17,14 @@ type User struct {
 
 func main() {
 	user := User{
-		FirstName: "Trevor",
-		LastName:  "Sweler",
+		FirstName:   "Trevor",
+		LastName:    "Sweler",
+		PhoneNumber: "1 555 5555",
 	}
 
 	log.Println(user.FirstName, user.LastName, "Birth date: ", user.BirthDate)
+}
+
+func whatever() {
+
 }
