@@ -1,6 +1,9 @@
 package main
 
-import "log"
+import (
+	"log"
+	"sort"
+)
 
 // type User struct {
 // 	FirstName string
@@ -54,8 +57,10 @@ func main() {
 	log.Println(mySlice)
 
 	var mySlice2 []int
-	mySlice2 = append(mySlice2, 1)
 	mySlice2 = append(mySlice2, 2)
+	mySlice2 = append(mySlice2, 1)
+	mySlice2 = append(mySlice2, 3)
+	sort.Ints(mySlice2)
 	log.Println(mySlice2)
 
 }
