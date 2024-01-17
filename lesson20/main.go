@@ -14,11 +14,19 @@ func main() {
 
 	// var myOtherMap map[string]string
 
-	myMap := make(map[string]string)
-	myMap["dog"] = "Samson"
-	myMap["other-dog"] = "Cassie"
-	myMap["dog"] = "fido"
+	// myMap := make(map[string]string)
+	// myMap["dog"] = "Samson"
+	// myMap["other-dog"] = "Cassie"
+	// myMap["dog"] = "fido"
 
-	log.Println(myMap["dog"])
-	log.Println(myMap["other-dog"])
+	// log.Println(myMap["dog"])
+	// log.Println(myMap["other-dog"])
+
+	myMap := make(map[string]int)
+
+	myMap["first"] = 1
+	myMap["second"] = 2
+
+	log.Println(myMap["first"])
+
 }
