@@ -28,5 +28,6 @@ func main() {
 	myMap["second"] = 2
 
 	log.Println(myMap["first"])
+	log.Println(myMap["second"])
 
 }
