@@ -48,8 +48,8 @@ func main() {
 	// var myNewVar float64
 	// myNewVar = 11.1
 
-	var myString string
-	myString = "Fish"
-	log.Println(myString)
+	var mySlice []string
+	mySlice = append(mySlice, "Travor")
+	log.Println(mySlice)
 
 }
