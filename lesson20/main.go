@@ -11,4 +11,8 @@ func main() {
 
 	mySecondString := "another string"
 	log.Println(myString, mySecondString, myInt)
+
+	var myOtherMap map[string]string
+
+	myMap := make(map[string]string, 0)
 }
