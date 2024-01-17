@@ -3,6 +3,8 @@ package main
 import "log"
 
 type User struct {
+	FirstName string
+	LastName  string
 }
 
 func main() {
@@ -25,12 +27,22 @@ func main() {
 	// log.Println(myMap["dog"])
 	// log.Println(myMap["other-dog"])
 
-	myMap := make(map[string]int)
+	// myMap := make(map[string]int)
 
-	myMap["first"] = 1
-	myMap["second"] = 2
+	// myMap["first"] = 1
+	// myMap["second"] = 2
 
-	log.Println(myMap["first"])
-	log.Println(myMap["second"])
+	// log.Println(myMap["first"])
+	// log.Println(myMap["second"])
+
+	myMap := make(map[string]User)
+
+	me := User{
+		FirstName: "Trevor",
+		LastName:  "Sawler",
+	}
+
+	myMap["me"] = me
+	log.Println(myMap["me"])
 
 }
