@@ -2,10 +2,10 @@ package main
 
 import "log"
 
-type User struct {
-	FirstName string
-	LastName  string
-}
+// type User struct {
+// 	FirstName string
+// 	LastName  string
+// }
 
 func main() {
 	var myString string
@@ -35,17 +35,21 @@ func main() {
 	// log.Println(myMap["first"])
 	// log.Println(myMap["second"])
 
-	myMap := make(map[string]User)
+	// myMap := make(map[string]User)
 
-	me := User{
-		FirstName: "Trevor",
-		LastName:  "Sawler",
-	}
+	// me := User{
+	// 	FirstName: "Trevor",
+	// 	LastName:  "Sawler",
+	// }
 
-	myMap["me"] = me
-	log.Println(myMap["me"].FirstName)
+	// myMap["me"] = me
+	// log.Println(myMap["me"].FirstName)
 
-	var myNewVar float64
-	myNewVar = 11.1
+	// var myNewVar float64
+	// myNewVar = 11.1
+
+	var myString string
+	myString = "Fish"
+	log.Println(myString)
 
 }
