@@ -50,6 +50,12 @@ func main() {
 
 	var mySlice []string
 	mySlice = append(mySlice, "Travor")
+	mySlice = append(mySlice, "John")
+	log.Println(mySlice)
+
+	var mySlice2 []int
+	mySlice2 = append(mySlice2, 1)
+	mySlice2 = append(mySlice2, 2)
 	log.Println(mySlice)
 
 }
