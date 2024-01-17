@@ -56,6 +56,6 @@ func main() {
 	var mySlice2 []int
 	mySlice2 = append(mySlice2, 1)
 	mySlice2 = append(mySlice2, 2)
-	log.Println(mySlice)
+	log.Println(mySlice2)
 
 }
