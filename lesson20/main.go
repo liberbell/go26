@@ -43,6 +43,9 @@ func main() {
 	}
 
 	myMap["me"] = me
-	log.Println(myMap["me"])
+	log.Println(myMap["me"].FirstName)
+
+	var myNewVar float64
+	myNewVar = 11.1
 
 }
