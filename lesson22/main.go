@@ -12,9 +12,9 @@ func main() {
 	animals["dog"] = "Fido"
 	animals["cat"] = "Fluffy"
 
-	var firstLine := "Once upon a midnight dreary"
+	var firstLine = "Once upon a midnight dreary"
 
-	for animalType, animal := range animals {
-		log.Println(animalType, animal)
+	for i, l := range firstLine {
+		log.Println(i, ":", l)
 	}
 }
