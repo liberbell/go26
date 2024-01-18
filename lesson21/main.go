@@ -16,5 +16,7 @@ func main() {
 
 	if cat == "cat" {
 		log.Println("cat is: ", cat)
+	} else {
+		log.Println("cat is not cat")
 	}
 }
