@@ -7,7 +7,8 @@ func main() {
 		log.Println(i)
 	}
 
-	animals := []string{"dog", "cat", "horse", "pig", "cow"}
+	// animals := []string{"dog", "cat", "horse", "pig", "cow"}
+	animals := make(map[string]string)
 
 	for _, animal := range animals {
 		log.Println(animal)
