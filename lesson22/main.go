@@ -13,8 +13,16 @@ func main() {
 	animals["cat"] = "Fluffy"
 
 	var firstLine = "Once upon a midnight dreary"
+	firstLine = "x"
 
 	for i, l := range firstLine {
 		log.Println(i, ":", l)
+	}
+
+	type User struct {
+		FirstName string
+		LastName  string
+		Email     string
+		Age       int
 	}
 }
