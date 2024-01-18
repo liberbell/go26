@@ -33,7 +33,7 @@ func main() {
 		log.Println("3")
 	}
 
-	myVar := "cat"
+	myVar := "dog"
 
 	switch myVar {
 	case "cat":
@@ -44,5 +44,9 @@ func main() {
 
 	case "fish":
 		log.Println("cat is set to: ", myVar)
+
+	default:
+		log.Println("cat is something else.")
 	}
+
 }
