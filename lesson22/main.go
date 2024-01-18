@@ -25,4 +25,11 @@ func main() {
 		Email     string
 		Age       int
 	}
+
+	var users []User
+	users = append(users, User{})
+
+	for i, l := range firstLine {
+
+	}
 }
