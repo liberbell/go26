@@ -9,7 +9,7 @@ func main() {
 
 	animals := []string{"dog", "cat", "horse", "pig", "cow"}
 
-	for i, animal := range animals {
-		log.Println(i, animal)
+	for _, animal := range animals {
+		log.Println(animal)
 	}
 }
