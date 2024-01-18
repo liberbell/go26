@@ -33,7 +33,7 @@ func main() {
 		log.Println("3")
 	}
 
-	myVar := "dog"
+	myVar := "human"
 
 	switch myVar {
 	case "cat":
