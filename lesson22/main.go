@@ -28,8 +28,9 @@ func main() {
 
 	var users []User
 	users = append(users, User{"John", "Smith", "john.smith@example.com", 20})
-	users = append(users, User{"Mary", "Jones", "mary.jones@example.com", 20})
-	users = append(users, User{"Sally", "Brown", "sally.brown@example.com", 20})
+	users = append(users, User{"Mary", "Jones", "mary.jones@example.com", 56})
+	users = append(users, User{"Sally", "Brown", "sally.brown@example.com", 71})
+	users = append(users, User{"Alex", "Anderson", "alex.anderson@example.com", 4})
 
 	for i, l := range firstLine {
 
