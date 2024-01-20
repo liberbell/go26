@@ -1,7 +1,9 @@
 package main
 
+import "fmt"
+
 type Animal interface {
-	Say() string
+	Says() string
 	NumberOfLegs() int
 }
 
@@ -14,4 +16,15 @@ type Gorilla struct {
 	Name          string
 	Colour        string
 	NumberOfTeeth int
+}
+
+func main() {
+	dog := Dog{
+		Name:  "Samsong",
+		Breed: "Poppy",
+	}
+}
+
+func PrintInfo(a Animal) {
+	fmt.Println("This animal says: ", a.Says())
 }
