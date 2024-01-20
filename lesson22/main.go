@@ -32,7 +32,7 @@ func main() {
 	users = append(users, User{"Sally", "Brown", "sally.brown@example.com", 71})
 	users = append(users, User{"Alex", "Anderson", "alex.anderson@example.com", 4})
 
-	for i, l := range firstLine {
-
+	for _, l := range users {
+		log.Println(l.FirstName, l.LastName, l.Email, l.Age)
 	}
 }
