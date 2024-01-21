@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/helpers"
+	"github.com/tsawler/myniceprogram/helpers"
 )
 
 const numPool = 10
