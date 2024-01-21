@@ -4,6 +4,10 @@ import (
 	"log"
 )
 
+func CalculateValue(intChan chan int) {
+	
+}
+
 func main() {
 	// log.Println("Hello world")
 
@@ -12,7 +16,8 @@ func main() {
 	// myVar.TypeName = "some name"
 	// log.Println(myVar.TypeName)
 
-	PrintText("Hi")
+	PrintText("Hi")make(chan int)
+	intChan := 
 }
 
 func PrintText(s string) {
