@@ -12,6 +12,8 @@ func main() {
 		{
 			"first_name": "Bruce",
 			"last_name": "Wayne",
+			"hair_colour": "black",
+			"has_dog": false
 		}
 	]`
 }
