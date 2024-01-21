@@ -1,14 +1,16 @@
 package main
 
 import (
-	"command-line-arguments/Users/hideakiehara/Go/src/github.com/tsawler/myniceprogram/helpers/helpers.go"
 	"log"
+
+	"github.com/helpers"
 )
 
 const numPool = 10
 
 func CalculateValue(intChan chan int) {
 	randomNumber := helpers.RandomNumber(numPool)
+	intChan <- randomNumber
 }
 
 func main() {
@@ -19,8 +21,9 @@ func main() {
 	// myVar.TypeName = "some name"
 	// log.Println(myVar.TypeName)
 
-	PrintText("Hi")make(chan int)
-	intChan := 
+	// PrintText("Hi")make(chan int)
+	intChan := make(chan int)
+	defer close(intChan)
 }
 
 func PrintText(s string) {
