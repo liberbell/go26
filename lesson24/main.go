@@ -1,8 +1,9 @@
 package main
 
 import (
-	"command-line-arguments/Users/hideakiehara/virtualenv/go26/lesson24/helpers/helpers.go"
 	"log"
+
+	"github.com/tsawler/myniceprogram/helpers"
 )
 
 func main() {
