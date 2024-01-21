@@ -3,6 +3,8 @@ package main
 type People struct {
 	FirstName string `json: "first_name"`
 	LastName  string `json: "last_name"`
+	HairClour string `json: "hair_colur"`
+	HasDog    bool   `json: "has_dog"`
 }
 
 func main() {
