@@ -35,5 +35,6 @@ func main() {
 	if err != nil {
 		log.Println("Error unmarshalling json", err)
 	}
+	log.Printf("unmarshalled: %v", unmarshalled)
 
 }
