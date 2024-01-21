@@ -8,7 +8,7 @@ import (
 type Person struct {
 	FirstName string `json:"first_name"`
 	LastName  string `json:"last_name"`
-	HairClour string `json:"hair_colur"`
+	HairClour string `json:"hair_colour"`
 	HasDog    bool   `json:"has_dog"`
 }
 
