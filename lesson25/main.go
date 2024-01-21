@@ -1,5 +1,10 @@
 package main
 
+type People struct {
+	FirstName string `json: "first_name"`
+	LastName  string `json: "last_name"`
+}
+
 func main() {
 	myJson := `
 	[
@@ -16,4 +21,5 @@ func main() {
 			"has_dog": false
 		}
 	]`
+
 }
