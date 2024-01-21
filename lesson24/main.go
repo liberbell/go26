@@ -28,6 +28,7 @@ func main() {
 	go CalculateValue(intChan)
 
 	num := <-intChan
+	log.Println(num)
 }
 
 func PrintText(s string) {
