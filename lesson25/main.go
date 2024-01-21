@@ -1,6 +1,8 @@
 package main
 
-type People struct {
+import "encoding/json"
+
+type Person struct {
 	FirstName string `json:"first_name"`
 	LastName  string `json:"last_name"`
 	HairClour string `json:"hair_colur"`
@@ -23,5 +25,9 @@ func main() {
 			"has_dog": false
 		}
 	]`
+
+	var unmarshalled []Person
+
+	err := json.Unmarshal([]byte(myJson))
 
 }
