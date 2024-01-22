@@ -1,9 +1,19 @@
 package main
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+	"log"
+)
 
 func main() {
 
+	result, err := divide(100.0, 10.0)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	fmt.Println("result of devide: ", result)
 }
 
 func divide(x, y float32) (float32, error) {
@@ -13,5 +23,5 @@ func divide(x, y float32) (float32, error) {
 		return result, errors.New("cannot divide by zero")
 	}
 	result = x / y
-	return result, err
+	return result, nil
 }
