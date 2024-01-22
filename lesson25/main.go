@@ -55,4 +55,6 @@ func main() {
 
 	mySlice = append(mySlice, m2)
 
+	newJson, err := json.MarshalIndent(mySlice)
+
 }
