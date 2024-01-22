@@ -7,4 +7,5 @@ func TestDevide(t *testing.T) {
 	if err != nil {
 		t.Error("Got an error when we should not have")
 	}
+
 }
