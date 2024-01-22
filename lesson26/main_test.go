@@ -9,3 +9,11 @@ func TestDevide(t *testing.T) {
 	}
 
 }
+
+func TestBadDevide(t *testing.T) {
+	_, err := divide(10.0, 0)
+	if err != nil {
+		t.Error("Got an error when we should not have")
+	}
+
+}
