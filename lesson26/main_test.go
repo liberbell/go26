@@ -10,7 +10,7 @@ var tests []struct {
 	isErr bool
 }{
 	{"valid-data": 100.0, 10.0, 10.0, false},
-	{"invalid-data": 100.0, 0.0, 0.0, true}
+	{"invalid-data": 100.0, 0.0, 0.0, true},
 }
 
 func TestDivision(t *testing.T)  {
