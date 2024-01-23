@@ -9,8 +9,8 @@ var tests []struct {
 	expected float32
 	isErr bool
 }{
-	{"valid-data": 100.0, 10.0, 10.0, false},
-	{"invalid-data": 100.0, 0.0, 0.0, true},
+	{"valid-data", 100.0, 10.0, 10.0, false},
+	{"invalid-data", 100.0, 0.0, 0.0, true},
 }
 
 func TestDivision(t *testing.T)  {
