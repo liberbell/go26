@@ -9,7 +9,14 @@ var tests []struct {
 	expected float32
 	isErr bool
 }{
-	{"valid-data": 100.0, 10.0, 10.0, false}
+	{"valid-data": 100.0, 10.0, 10.0, false},
+	{"invalid-data": 100.0, 0.0, 0.0, true}
+}
+
+func TestDivision(t *testing.T)  {
+	for _, tt := range tests {
+		got, err
+	}
 }
 
 func TestDevide(t *testing.T) {
