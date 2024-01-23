@@ -15,7 +15,12 @@ var tests []struct {
 
 func TestDivision(t *testing.T)  {
 	for _, tt := range tests {
-		got, err
+		got, err := divide(tt.divident, tt.divisor)
+		if tt.isErr {
+			if err == nil {
+				t.Error("expected an error but did not get one")
+			}
+		}
 	}
 }
 
