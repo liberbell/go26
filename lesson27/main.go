@@ -9,6 +9,9 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		n, err := fmt.Fprintf(w, "Hello world")
-		fmt.Println("Bytes written: ", +n)
+		if err != nil {
+			fmt.Println(err)
+		}
+		fmt.Println(fmt.Sprintf("Number of bytes: %d", n))
 	})
 }
