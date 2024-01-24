@@ -8,6 +8,7 @@ import (
 func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello world")
+		n, err := fmt.Fprintf(w, "Hello world")
+		fmt.Println("Bytes written: ", +n)
 	})
 }
