@@ -22,7 +22,7 @@ func TestDivision(t *testing.T) {
 			}
 		} else {
 			if err != nil {
-				t.Error("did not expect an error but get one", err.Error)
+				t.Error("did not expect an error but get one", err.Error())
 			}
 		}
 		if got != tt.expected {
