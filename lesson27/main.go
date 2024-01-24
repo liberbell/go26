@@ -15,6 +15,10 @@ func About(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "This is about page")
 }
 
+func AddValues(x, y int) int {
+	return x + y
+}
+
 func main() {
 
 	http.HandleFunc("/", Home)
