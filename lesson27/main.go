@@ -17,5 +17,5 @@ func main() {
 		fmt.Println(fmt.Sprintf("Number of bytes: %d", n))
 	})
 
-	http.ListenAndServe(portNumber, nil)
+	_ = http.ListenAndServe(portNumber, nil)
 }
