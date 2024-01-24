@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-portNumber = ":8000"
+var portNumber = ":8000"
 
 func main() {
 
