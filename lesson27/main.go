@@ -7,15 +7,18 @@ import (
 
 var portNumber = ":8000"
 
+func Home(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "This is my home page")
+}
+
+func About(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "This is about page")
+}
+
 func main() {
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		n, err := fmt.Fprintf(w, "Hello world")
-		if err != nil {
-			fmt.Println(err)
-		}
-		fmt.Println(fmt.Sprintf("Number of bytes: %d", n))
-	})
+	http.HandleFunc("/", Home)
+	http.HandleFunc("/about", About)
 
 	_ = http.ListenAndServe(portNumber, nil)
 }
