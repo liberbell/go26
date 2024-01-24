@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+portNumber = ":8000"
+
 func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -14,4 +16,6 @@ func main() {
 		}
 		fmt.Println(fmt.Sprintf("Number of bytes: %d", n))
 	})
+
+	http.ListenAndServe(portNumber, nil)
 }
