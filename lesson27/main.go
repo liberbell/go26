@@ -18,7 +18,10 @@ func About(w http.ResponseWriter, r *http.Request) {
 }
 
 func Divide(w http.ResponseWriter, r *http.Request) {
-
+	f, err := divideValue(100.0, 10.0)
+	if err != nil {
+		fmt.Fprintf(w, "Cannot divide by 0")
+	}
 }
 
 func AddValues(x, y int) int {
