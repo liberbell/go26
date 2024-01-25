@@ -29,7 +29,8 @@ func AddValues(x, y int) int {
 
 func divideValue(x, y float32) (float32, error) {
 	if y <= 0 {
-		err := errors.New("")
+		err := errors.New("cannot divide by zero")
+		return 0, err
 	}
 	result := x / y
 	return result, nil
