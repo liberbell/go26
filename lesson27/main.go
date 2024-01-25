@@ -22,7 +22,7 @@ func Divide(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Fprintf(w, "Cannot divide by 0")
 	}
-	fmt.Fprintf(w, fmt.Sprintf("%f divide by %f is %f"), 100.0, 10.0, f)
+	fmt.Fprintf(w, fmt.Sprintf("%f divided by %f is %f", 100.0, 10.0, f))
 }
 
 func AddValues(x, y int) int {
