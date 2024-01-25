@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"net/http"
 )
@@ -16,16 +17,29 @@ func About(w http.ResponseWriter, r *http.Request) {
 	_, _ = fmt.Fprintf(w, "This is about page and 2+2 is %d", sum)
 }
 
+func Divide(w http.ResponseWriter, r *http.Request) {
+
+}
+
 func AddValues(x, y int) int {
 	var sum int
 	sum = x + y
 	return sum
 }
 
+func divideValue(x, y float32) (float32, error) {
+	if y <= 0 {
+		err := errors.New("")
+	}
+	result := x / y
+	return result, nil
+}
+
 func main() {
 
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
+	http.HandleFunc("/divide", Divide)
 
 	fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
 
