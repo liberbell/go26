@@ -15,7 +15,7 @@ func About(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func renderTemplate(w http.ResponseWriter, r *http.Request) {
+func renderTemplate(w http.ResponseWriter, tmpl string) {
 
 }
 
