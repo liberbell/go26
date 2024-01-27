@@ -9,7 +9,7 @@ import (
 const portNumber = ":8000"
 
 func Home(w http.ResponseWriter, r *http.Request) {
-
+	renderTemplate(w, "home_page.tmpl")
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
