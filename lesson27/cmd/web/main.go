@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/tsawler/bookings/pkg/handlers"
+	"github.com/tsawler/go-course/pkg/handlers"
 )
 
 const portNumber = ":8000"
