@@ -2,12 +2,14 @@ package handlers
 
 import (
 	"net/http"
+
+	"github.com/tsawler/bookings/pkg/render"
 )
 
 func Home(w http.ResponseWriter, r *http.Request) {
-	RenderTemplate(w, "home_page.tmpl")
+	render.RenderTemplate(w, "home_page.tmpl")
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	RenderTemplate(w, "about_page.tmpl")
+	render.RenderTemplate(w, "about_page.tmpl")
 }
