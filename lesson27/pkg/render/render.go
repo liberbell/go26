@@ -33,6 +33,9 @@ func RenderTemplate(w http.ResponseWriter, t string) {
 	}
 	tmpl = tc[t]
 	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Println(err)
+	}
 }
 
 func createTemplateCache(t string) error {
