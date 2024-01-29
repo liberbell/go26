@@ -31,3 +31,9 @@ func RenderTemplate(w http.ResponseWriter, t string) {
 	tmpl = tc[t]
 	err = tmpl.Execute(w, nil)
 }
+
+func createTemplateCache(t string) error {
+	templates := []string{
+		fmt.Sprintf("./templates/%s", t), "./templates/base_layout.tmpl",
+	}
+}
