@@ -36,4 +36,8 @@ func createTemplateCache(t string) error {
 	templates := []string{
 		fmt.Sprintf("./templates/%s", t), "./templates/base_layout.tmpl",
 	}
+	tmpl, err := template.ParseFiles(templates...)
+	if err != nil {
+		return err
+	}
 }
