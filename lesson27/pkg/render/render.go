@@ -14,3 +14,7 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 		return
 	}
 }
+
+func RenderTemplate(w http.ResponseWriter, t string) {
+
+}
