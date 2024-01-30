@@ -3,11 +3,18 @@ package render
 import (
 	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 	"path/filepath"
 )
 
 func RenderTemplate(w http.ResponseWriter, tmpl string) {
+
+	tc, err := createTemplateCache()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tmpl, "./templates/base_layout.tmpl")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
