@@ -23,7 +23,7 @@ func RenderTemplate(w http.ResponseWriter, t string) {
 	var err error
 
 	_, inMap := tc[t]
-	if inMap {
+	if !inMap {
 		log.Println("creating template and adding cache")
 		err = createTemplateCache(t)
 		if err != nil {
