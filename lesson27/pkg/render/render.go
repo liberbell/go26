@@ -60,4 +60,7 @@ func createTemplateCache() (map[string]*template.Template, error) {
 	if err != nil {
 		return myCache, err
 	}
+	for _, page := range pages {
+		name := filepath.Base(page)
+	}
 }
