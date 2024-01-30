@@ -50,3 +50,8 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
 // 	return nil
 // }
+
+func createTemplateCache() (map[string]*template.Template, error) {
+	// myCache := make(map[string]*template.Template, 0)
+	myCache := map[string]*template.Template{}
+}
