@@ -1,6 +1,7 @@
 package render
 
 import (
+	"bytes"
 	"fmt"
 	"html/template"
 	"log"
@@ -14,6 +15,13 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	t, ok := tc[tmpl]
+	if !ok {
+		log.Fatal(err)
+	}
+
+	buf := new(bytes.Buffer)
 
 	parsedTemplate, _ := template.ParseFiles("./templates/"+tmpl, "./templates/base_layout.tmpl")
 	err := parsedTemplate.Execute(w, nil)
