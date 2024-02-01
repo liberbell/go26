@@ -7,8 +7,16 @@ import (
 	"github.com/tsawler/go-course/pkg/render"
 )
 
+var Repo *Repository
+
 type Repository struct {
 	App *config.AppConfig
+}
+
+func NewRepo(a *config.AppConfig) *Repository {
+	return &Repository{
+		App: a,
+	}
 }
 
 func Home(w http.ResponseWriter, r *http.Request) {
