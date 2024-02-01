@@ -20,7 +20,7 @@ func NewRepo(a *config.AppConfig) *Repository {
 }
 
 func NewHandlers(r *Repository) {
-	Repo
+	Repo = r
 }
 
 func Home(w http.ResponseWriter, r *http.Request) {
