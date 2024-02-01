@@ -23,6 +23,8 @@ func main() {
 
 	app.TemplateCache = tc
 
+	repo := handlers.NewRepo(&app)
+
 	render.NewTemplates(&app)
 
 	http.HandleFunc("/", handlers.Home)
