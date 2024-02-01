@@ -22,10 +22,10 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
 	tc := app.TemplateCache
 
-	tc, err := CreateTemplateCache()
-	if err != nil {
-		log.Fatal("could not yet create template from template cache")
-	}
+	// tc, err := CreateTemplateCache()
+	// if err != nil {
+	// 	log.Fatal("could not yet create template from template cache")
+	// }
 
 	t, ok := tc[tmpl]
 	if !ok {
@@ -34,12 +34,14 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
 	buf := new(bytes.Buffer)
 
-	err = t.Execute(buf, nil)
-	if err != nil {
-		log.Println(err)
-	}
+	_ = t.Execute(buf, nil)
 
-	_, err = buf.WriteTo(w)
+	// err = t.Execute(buf, nil)
+	// if err != nil {
+	// 	log.Println(err)
+	// }
+
+	_, err := buf.WriteTo(w)
 	if err != nil {
 		log.Println(err)
 	}
