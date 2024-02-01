@@ -29,7 +29,7 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
 	t, ok := tc[tmpl]
 	if !ok {
-		log.Fatal(err)
+		log.Fatal("could not yet create template from template cache")
 	}
 
 	buf := new(bytes.Buffer)
