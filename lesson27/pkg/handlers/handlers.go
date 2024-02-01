@@ -19,6 +19,10 @@ func NewRepo(a *config.AppConfig) *Repository {
 	}
 }
 
+func NewHandlers(r *Repository) {
+	Repo
+}
+
 func Home(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "home_page.tmpl")
 }
