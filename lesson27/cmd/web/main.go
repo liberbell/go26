@@ -15,6 +15,8 @@ func main() {
 
 	var app config.AppConfig
 
+	tc, err := render.createTemplateCache()
+
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
 
