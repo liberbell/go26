@@ -24,6 +24,7 @@ func main() {
 	app.TemplateCache = tc
 
 	repo := handlers.NewRepo(&app)
+	handlers.NewHandlers(repo)
 
 	render.NewTemplates(&app)
 
