@@ -4,12 +4,16 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/tsawler/go-course/pkg/config"
+
 	"github.com/tsawler/go-course/pkg/handlers"
 )
 
 const portNumber = ":8000"
 
 func main() {
+
+	var app config.AppConfig
 
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
