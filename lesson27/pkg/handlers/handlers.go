@@ -7,6 +7,11 @@ import (
 	"github.com/tsawler/go-course/pkg/render"
 )
 
+type TemplateData struct {
+	StringMap map[string]string
+	IntMap    map[int]int
+}
+
 var Repo *Repository
 
 type Repository struct {
