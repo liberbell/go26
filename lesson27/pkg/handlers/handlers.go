@@ -15,6 +15,7 @@ type TemplateData struct {
 	CSRFToken string
 	Flash     string
 	Warning   string
+	Error     string
 }
 
 var Repo *Repository
