@@ -22,7 +22,9 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
 	var tc map[string]*template.Template
 	if app.UseCache {
-		tc := app.TemplateCache
+		tc = app.TemplateCache
+	} else {
+		tc, _ = CreateTemplateCache()
 	}
 
 	// tc := app.TemplateCache
