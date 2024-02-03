@@ -20,7 +20,12 @@ func NewTemplates(a *config.AppConfig) {
 
 func RenderTemplate(w http.ResponseWriter, tmpl string) {
 
-	tc := app.TemplateCache
+	var tc map[string]*template.Template
+	if app.UseCache {
+		tc := app.TemplateCache
+	}
+
+	// tc := app.TemplateCache
 
 	// tc, err := CreateTemplateCache()
 	// if err != nil {
