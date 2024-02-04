@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	models "command-line-arguments/Users/hideakiehara/virtualenv/go26/lesson27/pkg/models/templatedata.go"
+	"github.com/tsawler/go-course/pkg//models"
 
 	"github.com/tsawler/go-course/pkg/config"
 	"github.com/tsawler/go-course/pkg/render"
