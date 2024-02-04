@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/tsawler/go-course/pkg//models"
+	"github.com/tsawler/go-course/pkg/models"
 
 	"github.com/tsawler/go-course/pkg/config"
 	"github.com/tsawler/go-course/pkg/render"
