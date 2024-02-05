@@ -38,5 +38,8 @@ func main() {
 		Handler: routes(&app),
 	}
 
+	err = srv.ListenAndServe()
+	log.Fatal(err)
+
 // 	_ = http.ListenAndServe(portNumber, nil)
 // }
