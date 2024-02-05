@@ -34,12 +34,12 @@ func main() {
 
 	fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
 	srv := &http.Server{
-		Addr: portNumber,
+		Addr:    portNumber,
 		Handler: routes(&app),
 	}
 
 	err = srv.ListenAndServe()
 	log.Fatal(err)
 
-// 	_ = http.ListenAndServe(portNumber, nil)
-// }
+	// _ = http.ListenAndServe(portNumber, nil)
+}
