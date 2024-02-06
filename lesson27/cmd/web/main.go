@@ -8,6 +8,8 @@ import (
 	"github.com/tsawler/go-course/pkg/config"
 	"github.com/tsawler/go-course/pkg/handlers"
 	"github.com/tsawler/go-course/pkg/render"
+
+	"github.com/alexedwards/scs/v2"
 )
 
 const portNumber = ":8000"
@@ -15,6 +17,8 @@ const portNumber = ":8000"
 func main() {
 
 	var app config.AppConfig
+
+	session := scs.New()
 
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
