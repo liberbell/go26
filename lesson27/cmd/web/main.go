@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/tsawler/go-course/pkg/config"
 	"github.com/tsawler/go-course/pkg/handlers"
@@ -19,6 +20,10 @@ func main() {
 	var app config.AppConfig
 
 	session := scs.New()
+	session.Lifetime = 24 * time.Hour
+	session.Cookie.Persist = true
+	session.Cookie.SameSite = http.SameSiteLaxMode
+	session.Cookie.Secure = false
 
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
