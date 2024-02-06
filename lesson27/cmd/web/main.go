@@ -15,9 +15,9 @@ import (
 
 const portNumber = ":8000"
 
-func main() {
+var app config.AppConfig
 
-	var app config.AppConfig
+func main() {
 
 	app.InProduction = false
 
