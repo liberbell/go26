@@ -9,6 +9,12 @@
                 <p>This is paragraph of text</p>
 
                 <p>This came from the template: {{index .StringMap "test"}}</p>
+
+                <p>
+                    {{if ne (index .StringMap "remote_ip") ""}}
+
+                    {{else}}
+                </p>
             </div>
         </div>
     </div>
