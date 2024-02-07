@@ -3,10 +3,10 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/tsawler/go-course/pkg/models"
+	"github.com/tsawler/bookings2/pkg/models"
 
-	"github.com/tsawler/go-course/pkg/config"
-	"github.com/tsawler/go-course/pkg/render"
+	"github.com/tsawler/bookings2/pkg/config"
+	"github.com/tsawler/bookings2/pkg/render"
 )
 
 var Repo *Repository
