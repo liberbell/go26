@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/tsawler/go-course/pkg/models"
+	"github.com/tsawler/bookings2/pkg/models"
 
-	"github.com/tsawler/go-course/pkg/config"
+	"github.com/tsawler/bookings2/pkg/config"
 )
 
 var functions = template.FuncMap{}
