@@ -20,8 +20,8 @@
             max-width: 70%;
         }
 
-        p {
-
+        .redText {
+            color: red;
         }
     </style>
     <body>
@@ -114,7 +114,8 @@
         <script>
             console.log("I am printing from java script.");
 
-            document.getElementById("myParagraph");
+            let myEl = document.getElementById("myParagraph");
+            myEl.classList.add("redText");
 
         </script>
 
