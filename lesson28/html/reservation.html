@@ -96,7 +96,7 @@
                 <div class="col">
                     <p id="myParagraph">This is some text.</p>
                     <p>
-                        <button id="color-button" class="btn btn-outline-secondary">Click me</button>
+                        <button id="colorButton" class="btn btn-outline-secondary">Click me</button>
                     </p>
                 </div>
             </div>
@@ -119,6 +119,9 @@
 
             // let myEl = document.getElementById("myParagraph");
             // myEl.classList.add("redText");
+            document.getElementById("colorButton").addEventListener("click", function(){
+                let myEl = document.getElementById("myParagraph");
+            })
 
 
         </script>
