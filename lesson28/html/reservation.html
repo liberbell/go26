@@ -101,17 +101,17 @@
             </div>
        </div>
 
-        <div class="row my-footer">
-            <div class="col">
-                Left
-            </div>
-            <div class="col">
-                Center
-            </div>
-            <div class="col">
-                Right
-            </div>
+    <div class="row my-footer">
+        <div class="col">
+            Left
         </div>
+        <div class="col">
+            Center
+        </div>
+        <div class="col">
+            Right
+        </div>
+    </div>
 
         <script type="text/javascript">
             console.log("I am printing from java script.");
@@ -128,7 +128,7 @@
 
             const elem = document.getElementById('reservation-dates');
             const rangepicker = new DateRangePicker(elem, {
-            // ...options
+                format: "yyyy-mm-dd",
             });
 
             (() => {
