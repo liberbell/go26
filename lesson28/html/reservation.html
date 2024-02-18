@@ -151,7 +151,11 @@
             }
 
             function Prompt() {
-                let toast = function() {
+                let toast = function(c) {
+                        const {
+                            a,
+                        } = c;
+                        
                         const Toast = Swal.mixin({
                         toast: true,
                         position: "top-end",
