@@ -125,12 +125,7 @@
             document.getElementById("colorButton").addEventListener("click", function(){
 
                 // notify("This is my message", "warning")
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Do you want to continue',
-                    icon: 'error',
-                    confirmButtonText: 'Cool'
-                })
+                notifyModal("error", "This is my message", "error", "button msg")
             });
 
             const elem = document.getElementById('reservation-dates');
