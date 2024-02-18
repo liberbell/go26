@@ -126,7 +126,7 @@
 
                 // notify("This is my message", "warning")
                 // notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
-                attention.success()
+                attention.toast()
             });
 
             const elem = document.getElementById('reservation-dates');
@@ -152,7 +152,21 @@
 
             function Prompt() {
                 let toast = function() {
-                    console.log("clicked button and got toast")
+                        const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                    });
+                    Toast.fire({
+                        icon: "success",
+                        title: "Signed in successfully"
+                    });
                 }
 
                 let success = function() {
