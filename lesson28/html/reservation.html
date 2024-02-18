@@ -120,12 +120,13 @@
     </div>
 
         <script type="text/javascript">
-            console.log("I am printing from java script.");
+            let attention = Prompt();
 
             document.getElementById("colorButton").addEventListener("click", function(){
 
                 // notify("This is my message", "warning")
-                notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
+                // notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
+                attention.toast()
             });
 
             const elem = document.getElementById('reservation-dates');
