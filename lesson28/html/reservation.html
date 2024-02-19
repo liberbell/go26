@@ -126,7 +126,7 @@
 
                 // notify("This is my message", "warning")
                 // notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
-                attention.success({msg: "Hello world"})
+                attention.toast({msg: "Ooops!"})
             });
 
             const elem = document.getElementById('reservation-dates');
@@ -209,6 +209,13 @@
                     success: success,
                     error: error,
                 }
+            }
+
+            function custom(c) {
+                const {
+                    msg: "",
+                    title: "",
+                } = c;
             }
 
             (() => {
