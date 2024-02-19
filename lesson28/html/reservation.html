@@ -153,12 +153,14 @@
             function Prompt() {
                 let toast = function(c) {
                         const {
-                            a,
+                            msg = "",
+                            icon = "success",
+                            position = "top-end",
                         } = c;
-                        
+
                         const Toast = Swal.mixin({
                         toast: true,
-                        position: "top-end",
+                        position: position,
                         showConfirmButton: false,
                         timer: 3000,
                         timerProgressBar: true,
@@ -168,8 +170,8 @@
                         }
                     });
                     Toast.fire({
-                        icon: "success",
-                        title: "Signed in successfully"
+                        icon: icon,
+                        title: msg
                     });
                 }
 
