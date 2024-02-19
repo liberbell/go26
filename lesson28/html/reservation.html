@@ -224,8 +224,8 @@
 
             async function custom(c) {
                 const {
-                    msg: "",
-                    title: "",
+                    msg = "",
+                    title = "",
                 } = c;
 
                 const { value: formValues } = await Swal.fire({
