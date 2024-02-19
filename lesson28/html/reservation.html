@@ -175,6 +175,10 @@
                 }
 
                 let success = function() {
+                    const {
+                        msg = "",
+                    } = c;
+                    
                     Swal.fire({
                         icon: "error",
                         title: "Oops...",
