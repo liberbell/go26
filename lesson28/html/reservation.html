@@ -126,6 +126,9 @@
 
                 // notify("This is my message", "warning")
                 // notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
+                let html = `
+                <form id="check-availability-form" action="" method="POST" novalidate class="needs-validation">
+                `
                 attention.toast({msg: "Ooops!"})
             });
 
@@ -218,12 +221,11 @@
                 } = c;
 
                 const { value: formValues } = await Swal.fire({
-                    title: "Multiple inputs",
-                    html: `
-                        <input id="swal-input1" class="swal2-input">
-                        <input id="swal-input2" class="swal2-input">
-                    `,
+                    title: title,
+                    html: msg,
+                    backdrop: false,
                     focusConfirm: false,
+                    showCancelButton: true,
                     preConfirm: () => {
                         return [
                         document.getElementById("swal-input1").value,
