@@ -175,7 +175,12 @@
                 }
 
                 let success = function() {
-                    console.log("clicked button and got success")
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong!",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                    });
                 }
 
                 return {
