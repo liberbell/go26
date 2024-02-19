@@ -160,7 +160,9 @@
 
                         const Toast = Swal.mixin({
                         toast: true,
+                        title: msg,
                         position: position,
+                        icon: icon,
                         showConfirmButton: false,
                         timer: 3000,
                         timerProgressBar: true,
@@ -169,10 +171,7 @@
                             toast.onmouseleave = Swal.resumeTimer;
                         }
                     });
-                    Toast.fire({
-                        icon: icon,
-                        title: msg
-                    });
+                    Toast.fire({});
                 }
 
                 let success = function() {
