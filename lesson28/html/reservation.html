@@ -225,28 +225,28 @@
             }
 
             async function custom(c) {
-            const {
-            msg = "",
-            title = "",
-            } = c;
+                const {
+                    msg = "",
+                    title = "",
+                } = c;
 
-            const { value: formValues } = await Swal.fire({
-            title: title,
-            html: msg,
-            backdrop: false,
-            focusConfirm: false,
-            showCancelButton: true,
-            preConfirm: () => {
-            return [
-            document.getElementById("start").value,
-            document.getElementById("end").value
-            ]
-            }
-            })
+                const { value: formValues } = await Swal.fire({
+                    title: title,
+                    html: msg,
+                    backdrop: false,
+                    focusConfirm: false,
+                    showCancelButton: true,
+                    preConfirm: () => {
+                        return [
+                            document.getElementById("start").value,
+                            document.getElementById("end").value
+                        ]
+                    }
+                })
 
-            if (formValues) {
-            Swal.fire(JSON.stringify(formValues));
-            }
+                if (formValues) {
+                Swal.fire(JSON.stringify(formValues));
+                }
             }
 
             (() => {
