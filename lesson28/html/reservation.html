@@ -131,13 +131,13 @@
                 <form id="check-availability-form" action="" method="POST" novalidate class="needs-validation">
                     <div class="form-row">
                         <div class="col">
-                            <div class="form-row" id="reservation-dates-row">
+                            <div class="form-row" id="reservation-dates-modal">
                                 <div class="col">
                                     <input required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
                                 </div>
 
                                 <div class="col">
-                                    <input required class="form-control" type="text" name="end" id="end" placeholder="Depature">
+                                    <input required class="form-control" type="text" name="end" id="end" placeholder="Departure">
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
             });
 
             const elem = document.getElementById('reservation-dates');
-            const rangepicker = new DateRangePicker(elem, {
+            const rangePicker = new DateRangePicker(elem, {
                 format: "yyyy-mm-dd",
             });
 
