@@ -239,7 +239,10 @@
                     showCancelButton: true,
                     willOpen: () => {
                         const elem = document.getElementById("reservation-dates-modal");
-                        const rp = new DataRangePicker(elem, )
+                        const rp = new DataRangePicker(elem, {
+                            format: "yyyy-mm-dd",
+                            showOnFocus: true,
+                        })
                     },
                     preConfirm: () => {
                         return [
