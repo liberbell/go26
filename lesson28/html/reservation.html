@@ -237,6 +237,10 @@
                     backdrop: false,
                     focusConfirm: false,
                     showCancelButton: true,
+                    willOpen: () => {
+                        const elem = document.getElementById("reservation-dates-modal");
+                        const rp = new DataRangePicker(elem, )
+                    },
                     preConfirm: () => {
                         return [
                             document.getElementById("start").value,
