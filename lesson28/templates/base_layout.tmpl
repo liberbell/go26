@@ -39,6 +39,11 @@
         <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
         <script src="https://unpkg.com/notie"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        {{block "js" .}}
+          
+        {{end}}
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -78,9 +83,6 @@
 
         {{end}}
 
-        {{block "js" .}}
-        {{end}}
-
         <footer class="my-footer">
             <div class="row">
                 <div class="col">
@@ -99,9 +101,6 @@
                 let attention = Prompt();
     
                 document.getElementById("colorButton").addEventListener("click", function(){
-    
-                    // notify("This is my message", "warning")
-                    // notifyModal("success", "<em>Hello, people</em>", "success", "button msg")
                     let html = `
                     <form id="check-availability-form" action="" method="POST" novalidate class="needs-validation">
                         <div class="form-row">
