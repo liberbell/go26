@@ -46,3 +46,11 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "make-reservation_page.tmpl", &models.TemplateData{})
 }
+
+func (m *Repository) Generals(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "generals_page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Majors(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "majors_page.tmpl", &models.TemplateData{})
+}
