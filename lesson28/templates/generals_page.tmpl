@@ -30,11 +30,6 @@
 
 {{define "js"}}
     <script>
-        const elem = document.getElementById('reservation-dates');
-            const rangePicker = new DateRangePicker(elem, {
-                format: "yyyy-mm-dd",
-            });
-            
         document.getElementById("chech-availability-button").addEventListener("click", function(){
             let html = `
             <form id="check-availability-form" action="" method="POST" novalidate class="needs-validation">
