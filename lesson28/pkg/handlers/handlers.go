@@ -44,19 +44,19 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 }
 
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "make-reservation_page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation_page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) Generals(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "generals_page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "generals_page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) Majors(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "majors_page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "majors_page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) Availability(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "search-availability_page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "search-availability_page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) PostAvailability(w http.ResponseWriter, r *http.Request) {
@@ -64,5 +64,5 @@ func (m *Repository) PostAvailability(w http.ResponseWriter, r *http.Request) {
 }
 
 func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "contact_page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "contact_page.tmpl", &models.TemplateData{})
 }
