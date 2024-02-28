@@ -6,10 +6,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/tsawler/bookings2/pkg/models"
+	"github.com/tsawler/bookings2/internal/pkg/models"
 
-	"github.com/tsawler/bookings2/pkg/config"
-	"github.com/tsawler/bookings2/pkg/render"
+	"github.com/tsawler/bookings2/internal/pkg/config"
+	"github.com/tsawler/bookings2/internal/pkg/render"
 )
 
 var Repo *Repository
