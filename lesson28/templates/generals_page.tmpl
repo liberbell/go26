@@ -54,6 +54,9 @@
                 title: "Choose your date",
                 callback: function(result) {
                     console.log("called");
+
+                    fetch('/search-availability-json')
+                        .then(response => response.json())
                 }
             });
         })
