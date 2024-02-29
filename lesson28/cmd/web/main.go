@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"time"
 
+	// "github.com/tsawler/bookings2/internal/pkg/config"
 	"github.com/tsawler/bookings2/internal/pkg/config"
 	"github.com/tsawler/bookings2/internal/pkg/handlers"
 	"github.com/tsawler/bookings2/internal/pkg/render"
