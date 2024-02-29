@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/tsawler/bookings2/pkg/models"
+	"github.com/tsawler/bookings2/internal/pkg/models"
 
 	"github.com/justinas/nosurf"
-	"github.com/tsawler/bookings2/pkg/config"
+	"github.com/tsawler/bookings2/internal/pkg/config"
 )
 
 var functions = template.FuncMap{}
